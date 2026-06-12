@@ -5,21 +5,21 @@
 class CaesarSearch < Formula
   desc "CLI for the Caesar search API"
   homepage "https://github.com/caesar-data/caesar-search-cli"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/caesar-data/caesar-search-cli/releases/download/v0.1.1/caesar-search_0.1.1_darwin_amd64.tar.gz"
-      sha256 "1e22f469eedf3ffa1f7f3af938eaffd1805b4faea926bc463e344b1395dada3f"
+      url "https://github.com/caesar-data/caesar-search-cli/releases/download/v0.1.2/caesar-search_0.1.2_darwin_amd64.tar.gz"
+      sha256 "58498a7fdb36f1bc24299c55cacb9068adac7a5fa0f7d2e6df38ffa7d14fe7a0"
 
       define_method(:install) do
         bin.install "caesar-search"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/caesar-data/caesar-search-cli/releases/download/v0.1.1/caesar-search_0.1.1_darwin_arm64.tar.gz"
-      sha256 "735d825bfb4a00ee07b04da9cccd6ca12956f4d5eb8433fe931a3ea8cf8da4dc"
+      url "https://github.com/caesar-data/caesar-search-cli/releases/download/v0.1.2/caesar-search_0.1.2_darwin_arm64.tar.gz"
+      sha256 "e997c400c6e28a621a39534ed56218102fe77f11dcf2c2d110cb3a94c3e744fe"
 
       define_method(:install) do
         bin.install "caesar-search"
@@ -29,15 +29,15 @@ class CaesarSearch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/caesar-data/caesar-search-cli/releases/download/v0.1.1/caesar-search_0.1.1_linux_amd64.tar.gz"
-      sha256 "c0480e9a8d62dfd5d21215d91b898f489475198abe041f151bd6eb66ecb7bc5b"
+      url "https://github.com/caesar-data/caesar-search-cli/releases/download/v0.1.2/caesar-search_0.1.2_linux_amd64.tar.gz"
+      sha256 "962c3571fc067a91c4101425e3f9ee5cf59d78c61a4ac1a20f6e89715db1a5d9"
       define_method(:install) do
         bin.install "caesar-search"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/caesar-data/caesar-search-cli/releases/download/v0.1.1/caesar-search_0.1.1_linux_arm64.tar.gz"
-      sha256 "59a213be7a5ff4d1f8589fa62f391f1c77858ebf8e0df2de4c9818195539a0c2"
+      url "https://github.com/caesar-data/caesar-search-cli/releases/download/v0.1.2/caesar-search_0.1.2_linux_arm64.tar.gz"
+      sha256 "6dd118fa056fb6bd71c3f952a1d929f56eb358301f4f47ff88bfff4f1e040add"
       define_method(:install) do
         bin.install "caesar-search"
       end
