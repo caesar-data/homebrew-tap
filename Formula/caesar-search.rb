@@ -45,6 +45,6 @@ class CaesarSearch < Formula
   end
 
   test do
-    assert_match "caesar-search", shell_output("#{bin}/caesar-search --version")
+    assert_match version.to_s, shell_output("#{bin}/caesar-search --version")
   end
 end
